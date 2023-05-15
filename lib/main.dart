@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: FirstPage());
+        home: const FirstPage());
   }
 }
 
@@ -35,10 +35,10 @@ class FirstPage extends StatelessWidget {
               'Rzuć kostką',
               style: GoogleFonts.lato(fontSize: 30),
             ),
-            SizedBox(height: 35),
+            const SizedBox(height: 35),
             ElevatedButton.icon(
                 style: ElevatedButton.styleFrom(
-                  padding: EdgeInsets.all(30),
+                  padding: const EdgeInsets.all(30),
                 ),
                 onPressed: () {
                   Navigator.push(
@@ -46,7 +46,7 @@ class FirstPage extends StatelessWidget {
                       MaterialPageRoute(
                           builder: (context) => const SecondPage()));
                 },
-                icon: Icon(
+                icon: const Icon(
                   Icons.sports_esports,
                   size: 35,
                 ),
@@ -76,15 +76,15 @@ class SecondPage extends StatelessWidget {
               result.toString(),
               style: GoogleFonts.lato(fontSize: 40),
             ),
-            SizedBox(height: 35),
+            const SizedBox(height: 35),
             ElevatedButton.icon(
                 style: ElevatedButton.styleFrom(
-                  padding: EdgeInsets.all(30),
+                  padding: const EdgeInsets.all(30),
                 ),
                 onPressed: () {
                   Navigator.pop(context);
                 },
-                icon: Icon(
+                icon: const Icon(
                   Icons.arrow_back,
                   size: 35,
                 ),
